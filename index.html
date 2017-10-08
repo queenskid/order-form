@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Bus-mall Order Form</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-
-   <h1 id="h1">Order Form</h1>
-
-   <form id="bus-mall">
-      <fieldset>
-        <legend>Complete Your Order Here</legend>
-
-        <label for="item">Items: </label>
-        <input name="item" type="select" size="30"/>
-
-        <!-- <label for="quantity">Quantity: </label> -->
-        <!-- <input name="quan" type="select" size="30" /> -->
-          <select class="" name="">
-
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Saira:300,700" rel="stylesheet">
+  <title>BusMall Market</title>
+</head>
+<header>
+  <h1>BusMall Market</h1>
+</header>
+<body>
+  <section id="productsSection">
+    <p>Add items to your cart from the dropdown menu.</p>
+    <div class="form">
+      <form id="store-form">
+        <fieldset>
+          <legend>Select your Items</legend>
+          <select id="items">
+            <option id="start">Select a Product</option>
+            <option id="bag">bag</option>
+            <option id="bananaSlicer">Banana Slicer</option>
+            <option id="bathroomStand">Bathroom Stand</option>
+            <option id="boots">Boots</option>
+            <option id="breakfastMaker">Breakfast Maker</option>
+            <option id="gum">Gum</option>
+            <option id="chair">Chair</option>
+            <option id="cthulhu">Cthulhu</option>
+            <option id="dog-duck">Dog Duck</option>
+            <option id="dragon">Dragon</option>
+            <option id="pen">Pen</option>
+            <option id="petSweep">Pet Sweep</option>
+            <option id="Scissors">Scissors</option>
+            <option id="shark">Shark</option>
+            <option id="sweep">Sweep</option>
+            <option id="tauntaun">Tauntaun</option>
+            <option id="unicorn">Unicorn</option>
+            <option id="usb">USB</option>
+            <option id="waterCan">Water Can</option>
+            <option id="wineGlass">Wine Glass</option>
           </select>
-          <option value="numbers"></option>
+          <label for="quantity">Quantity:</label>
+          <input id="quantity" name="quantity" type="number" />
+          <button id="addCart" type="submit">Add to Cart</button>
+        </form>
+      </div>
+      <hr></hr>
+      <div class="form">
+        <form id="user-form">
+          <fieldset>
+            <legend>Shipping Information</legend>
+              <label for="name">Name:</label>
+              <input id="name" name="name" type="text" />
 
-        <label for="name">Name: </label>
-        <input name="name" type="text" size="30" />
+              <label for="address">Address:</label>
+              <input id="street" name="address" type="text" />
 
-        <label for="address">Address: </label>
-        <input name="address" type="text" size="30" />
+              <label for="city">City:</label>
+              <input id="city" name="city" type="text" />
 
-        <button type="Submit"></button>
+              <label for="state">State:</label>
+              <input id="state" name="state" type="text" />
 
-      </fieldset>
-    </form>
+              <label for="zip">ZIP:</label>
+              <input id="zip" name="zip" type="text" />
 
+              <label for="phone">Phone Number:</label>
+              <input id="phone" name="phone" type="number" />
 
-
-  <h2>Your items will be shipped when order form is completed</h2>
-  <table id='stores'></table>
-
-<p id="p1">Thank you for purchasing</P>
-
-
-  <script type="text/javascript" src="app.js">
-  </script>
-  </body>
-</html>
+              <label for="credit">Credit Card:</label>
+              <input id="credit" name="credit" />
+              <button id="addUser" type="submit">Submit Order</button>
+            </fieldset>
+            </form>
+          </div>
+        </section>
+      </body>
+      <script src="app.js"></script>
+      <footer>
+      </footer>
+      </html>

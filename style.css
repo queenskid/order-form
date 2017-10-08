@@ -1,0 +1,59 @@
+header {
+  height: 100px;
+  padding-top: 20px;
+  box-shadow: 5px 3px 8px #888888;
+  color: white;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h3 {
+  font-family: 'Saira', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+}
+
+table td tr {
+  border: 1px solid red;
+}
+
+fieldset {
+  border: 0;
+}
+
+hr {
+  color: lightgrey;
+  width: 55%;
+  border-top: 1px dotted #8c8b8b;
+}
+
+table,th,td {
+  font-family: fantasy;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 30%;
+}
+
+tr,td {
+  border-bottom: 1px solid rgb(234, 234, 234);
+  padding: 10px;
+  padding-top: 20px;
+}
+
+button {
+  color: white;
+  background-color: red;
+  font-weight: 700;
+  font-size: 12px;
+  border: 1px solid red;
+  padding: 10px 15px;
+  margin-left: 35px;
+}
